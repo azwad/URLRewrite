@@ -1,0 +1,3 @@
+This is a plagger plugin for rewrite shorten url or rssad url correct to original permalink.
+
+plagger -c RssADfixup2Dump.yaml 

@@ -1,0 +1,22 @@
+global:
+ timezone: Asia/Tokyo
+ user_agent:
+  cookies:
+   file: /home/toshi/.w3m/cookie
+   agent: w3m/0.5.2
+ cache:
+   base: /home/toshi/.plagger
+ log:
+  level: debug 
+plugins:
+#INPUT
+ - module: Subscription::Config
+   config:
+     feed:
+       - http://www.excite.co.jp/News/rss/odd/ 
+#FILTER
+ - module: Filter::URLRewrite
+
+#OUTPUT
+ - module: Publish::DumpEntry
+
